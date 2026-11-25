@@ -1,0 +1,25 @@
+# Python 3.14. Install the CUDA build of PyTorch FIRST (see README.md), then:
+#     pip install -r requirements.txt
+#
+# On Windows a plain `pip install torch` gives a CPU-only build. Use the command from
+# https://pytorch.org/get-started/locally/ instead, for example:
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# (On Linux the default PyPI wheels already include CUDA.)
+torch>=2.9
+torchvision>=0.24
+
+opencv-python>=4.10
+mediapipe>=0.10.20
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+seaborn>=0.13
+scikit-learn>=1.5
+
+# Notebook front end
+jupyter
+ipykernel
+
+# Versions this notebook was tested with (Linux, RTX 3060 Laptop GPU, November 2026):
+# torch 2.15.0+cu132, torchvision 0.29.2+cu132, opencv-python 5.1.0, mediapipe 1.2.3,
+# numpy 2.5.5, pandas 3.1.1, matplotlib 3.11.2, seaborn 0.13.2, scikit-learn 1.9.1

@@ -1,0 +1,24 @@
+# Python / Jupyter
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Dataset: download from Kaggle (see README.md / main.ipynb); too large for git
+dataset/
+
+# Downloaded automatically by the notebook
+hand_landmarker.task
+
+# Your own webcam captures (personal images)
+my_data/
+
+# Fine-tuned weights are specific to your hand and camera
+artifacts/sign_cnn_finetuned.pt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
